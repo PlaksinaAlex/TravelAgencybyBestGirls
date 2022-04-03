@@ -13,12 +13,7 @@ namespace TravelAgencyContracts.ViewModels
         [DisplayName("Название путешествия")]
         public string TripName { get; set; }
         public int ClientId { get; set; }
-        [DisplayName("Дата начала")]
-        public DateTime DateStartTour { get; set; }
-        [DisplayName("Дата окончания")]
-        public DateTime? DateFinishTour { get; set; }
-        [DisplayName("Статус")]
-        public  PaymantStatus Status { get; set; }
+   
         [DisplayName("Стоимость")]
         public decimal Price { get; set; }
         [DisplayName("Туры")]

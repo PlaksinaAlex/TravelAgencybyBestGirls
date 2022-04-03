@@ -11,7 +11,7 @@ namespace TravelAgencyDatabaseImplement.Models
 	{
 		public int Id { get; set; }
 		public int TripId { get; set; }
-		public int TourtId { get; set; }
+		public int TourId { get; set; }
 		[Required]
 		public int Count { get; set; }
 		public virtual Tour Tour{ get; set; }
