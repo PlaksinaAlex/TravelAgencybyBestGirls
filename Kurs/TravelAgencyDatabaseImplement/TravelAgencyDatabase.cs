@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace TravelAgencyDatabaseImplement
 {
-	public class TravelAgencyDatabase
+	public class TravelAgencyDatabase : DbContext
 	{
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
@@ -17,7 +17,11 @@ namespace TravelAgencyDatabaseImplement
 		public virtual DbSet<Tour> Tours { set; get; }
 		public virtual DbSet<Trip> Trips { set; get; }
 		public virtual DbSet<TripTour> TripTours { set; get; }
-		public virtual DbSet<Order> Orders { set; get; }
+		public virtual DbSet<TripExpense> TripExpenses { set; get; }
+		public virtual DbSet<Expense> Expenses { set; get; }
+		public virtual DbSet<Payment> Payments { set; get; }
 		public virtual DbSet<Client> Clients { set; get; }
+		public virtual DbSet<Worker> Workers { set; get; }
+
 	}
 }
